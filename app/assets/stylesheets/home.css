@@ -28,7 +28,7 @@
 
 .app_desc {
   font-family: 'Proxima Nova Light';
-  width:60%;
+  width: 60%;
   text-transform: capitalize;
   font-weight: 700;
   color: #434b54;
@@ -41,6 +41,7 @@
   justify-content: space-between;
   width: 80%;
 }
+
 .link {
   padding: 10px 25px;
   border: 1px solid black;
