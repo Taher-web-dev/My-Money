@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('Proxima Nova Bold.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('Proxima Nova Light.otf');
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome-img {
+  width: 60%;
+  margin-top: 100px;
+}
+
+.greeting {
+  font-family: 'Proxima Nova Bold';
+  font-size: 52px;
+  margin-bottom: 25px;
+}
+
+.app_desc {
+  font-family: 'Proxima Nova Light';
+  width:60%;
+  text-transform: capitalize;
+  margin-top: 0;
+  font-weight: 700;
+  color: #434b54;
+  line-height: 1.2;
+  text-align: justify;
+}
