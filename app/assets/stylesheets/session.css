@@ -33,6 +33,7 @@ color: white;
 .operation {
 width: 100%;
 display: flex;
+margin-bottom: 7.5px;
 }
 
 .active-link, .disabled-link {
@@ -70,8 +71,8 @@ outline: none;
 }
 
 .profile {
-margin-top: 15vh;
-margin-bottom: 5vh;
+margin-top: 3vh;
+margin-bottom: 2vh;
 }
 
 .sign-up {
@@ -143,4 +144,17 @@ margin-bottom: 15px;
 .log-in-title {
 margin-top: 50px;
 margin-bottom: 10px;
+}
+
+.error {
+  height: 20vh;
+  vertical-align: middle;
+  margin-top: 0px;
+  padding-top: 0;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.error h2 {
+  font-size: 20px;
 }
