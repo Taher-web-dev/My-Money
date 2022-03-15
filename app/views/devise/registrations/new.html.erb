@@ -1,0 +1,32 @@
+
+<div class="wrapper">
+  <div class="header-design">
+    
+    <img src="https://img.icons8.com/color/48/000000/user-menu-male--v1.png" class='img-profile' />
+    <h2> Welcome to My Money app!</h2>
+  </div>
+  <div class="operation">
+    <%= link_to "Log In", new_user_session_path, class:'active-link' %>
+    <%= link_to "Sign Up", new_user_registration_path, class:'disabled-link' %>
+  </div>
+<h2 class='profile'>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:'Email address', class:'input-look' %>
+  
+    <%= f.text_field :name, placeholder:'Username', class:'input-look' %>
+  
+    <%= f.password_field :password, autocomplete: "new-password", placeholder:"Password #{@minimum_password_length} characters minimum",class: 'input-look' %>
+  
+
+  
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"Repeat Password",class: 'input-look' %>
+  
+    <div class="sign-up">
+      <%= f.submit "Sign up", class:'sign-up-btn' %>
+    </div>
+<% end %>
+
+</div>
