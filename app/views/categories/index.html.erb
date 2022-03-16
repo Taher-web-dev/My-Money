@@ -1,5 +1,8 @@
-<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false} %>
+<%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
 
+<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false} %>
+<div class="all-categories">
+<% if @categories %>
 <% @categories.each do |cat| %>
   <% img_icon = cat.icon %>
   <% name = cat.name %>
@@ -13,5 +16,11 @@
   <% end %>
   <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl} %>
 <% end %> 
+<% else %>
+<p class='no-data'> No category created yet! </p>
+<% end %>
 
-<%= button_to "Add a new category", "/", method: :get, class:'add-btn' %>
+</div>
+<div class='btn-wrapper'>
+  <%= button_to "Add a new category", "/", method: :get, class:'add-btn' %>
+</div>
