@@ -1,3 +1,17 @@
-<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: true} %>
+<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false} %>
 
-<%= render partial:'partial/card', locals: {img: nil, title:'Mac donalds fastfood', date:'12 Apr 2014', amount:'45.00'} %>
+<% @categories.each do |cat| %>
+  <% img_icon = cat.icon %>
+  <% name = cat.name %>
+  <% tm = cat.created_at %>
+  <% vl = 0 %>
+  <% cat_id = cat.id %>
+  <% records = OperationType.where(category_id: cat_id) %>
+  <% records.each do |record| %>
+    <% exp_id = record.expense_id %>
+    <% vl += Expense.find(exp_id).amount %>
+  <% end %>
+  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl} %>
+<% end %> 
+
+<%= button_to "Add a new category", "/", method: :get, class:'add-btn' %>
