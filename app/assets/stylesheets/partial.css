@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('Proxima Nova Bold.otf');
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('Proxima Nova Light.otf');
+  }
+  
+.header-wrapper {
+  width: 100%;
+  background-color: #3778c2;
+}
+
+.main-header {
+  width: 90%;
+  display: flex;
+  margin-left: 5%;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ham-menu {
+  width: 10%;
+}
+
+.icon-img {
+  width: 100%;
+}
+
+.search-icon {
+  width: 10%;
+}
+
+.view-name {
+  color: white;
+  font-family: 'Proxima Nova Bold.otf';
+}
+
+.sort-icon {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.sort-type {
+  font-family: 'Proxima Nova Light';
+  color: white;
+  font-size: 16px;
+  font-weight: 650;
+  margin-bottom: 15px;
+}
+
+.recent {
+  margin-left: 40%;
+  margin-right: 10%;
+}
+
+.ancient {
+  opacity: 0.6;
+}
+
+
+
+.optional-part {
+  display: flex;
+  flex-direction: column;
+  font-weight: 650;
+  font-size: 16px;
+}
