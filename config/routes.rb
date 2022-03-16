@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   
   root "home#index"
 
-  resources :categories, only:[:index, :new]
+  resources :categories, only:[:index, :new, :create]
 end

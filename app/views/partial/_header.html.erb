@@ -1,11 +1,13 @@
 <%= stylesheet_link_tag "partial", "data-turbo-track": "reload" %>
 <% img_src = "https://www.pngkey.com/png/full/332-3321462_mobile-menu-for-barefoot-resort-vacations-hamburger-menu.png" %>
+<% path = '/' %>
 <% if back_view %>
-  <% img_src = "https://www.nicepng.com/png/detail/266-2660273_expand-slideshow-white-back-icon-png.png" %>
+  <% img_src = image_url('left-arrow.png') %>
+  <% path = '/' %>
 <% end %>
 <div class="header-wrapper">
   <div class="main-header"> 
-    <a href='/' class='ham-menu'>
+    <a href=<%= path %> class='ham-menu'>
       <img src=<%= img_src %> alt='menu-icon' class="icon-img" />
     </a>
     <h2 class="view-name"> <%= view_name %> </h2>
