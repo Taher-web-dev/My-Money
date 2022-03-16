@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "users", to: "home#index"
   
   root "home#index"
-
+  
   resources :categories, only:[:index, :new, :create]
+  resources :menu, only:[:index]
 end
