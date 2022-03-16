@@ -1,8 +1,12 @@
 <%= stylesheet_link_tag "partial", "data-turbo-track": "reload" %>
+<% img_src = "https://www.pngkey.com/png/full/332-3321462_mobile-menu-for-barefoot-resort-vacations-hamburger-menu.png" %>
+<% if back_view %>
+  <% img_src = "https://www.nicepng.com/png/detail/266-2660273_expand-slideshow-white-back-icon-png.png" %>
+<% end %>
 <div class="header-wrapper">
   <div class="main-header"> 
     <a href='/' class='ham-menu'>
-      <img src="https://www.pngkey.com/png/full/332-3321462_mobile-menu-for-barefoot-resort-vacations-hamburger-menu.png" alt='menu-icon' class="icon-img" />
+      <img src=<%= img_src %> alt='menu-icon' class="icon-img" />
     </a>
     <h2 class="view-name"> <%= view_name %> </h2>
     <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik03NC41MzMzMywxNy4yYy0zMS41OTgzMSwwIC01Ny4zMzMzMywyNS43MzUwMiAtNTcuMzMzMzMsNTcuMzMzMzNjMCwzMS41OTgzMSAyNS43MzUwMiw1Ny4zMzMzMyA1Ny4zMzMzMyw1Ny4zMzMzM2MxMy43NDA4LDAgMjYuMzU4NDgsLTQuODc5NCAzNi4yNDc2NiwtMTIuOTc4MzlsMzQuMjMyMDMsMzQuMjMyMDNjMS40MzgwMiwxLjQ5Nzc4IDMuNTczNCwyLjEwMTEzIDUuNTgyNiwxLjU3NzM1YzIuMDA5MiwtMC41MjM3OCAzLjU3ODI2LC0yLjA5Mjg0IDQuMTAyMDQsLTQuMTAyMDRjMC41MjM3OCwtMi4wMDkyIC0wLjA3OTU3LC00LjE0NDU4IC0xLjU3NzM1LC01LjU4MjZsLTM0LjIzMjAzLC0zNC4yMzIwM2M4LjA5ODk5LC05Ljg4OTE3IDEyLjk3ODM5LC0yMi41MDY4NSAxMi45NzgzOSwtMzYuMjQ3NjZjMCwtMzEuNTk4MzEgLTI1LjczNTAyLC01Ny4zMzMzMyAtNTcuMzMzMzMsLTU3LjMzMzMzek03NC41MzMzMywyOC42NjY2N2MyNS40MDI0OSwwIDQ1Ljg2NjY3LDIwLjQ2NDE4IDQ1Ljg2NjY3LDQ1Ljg2NjY3YzAsMjUuNDAyNDkgLTIwLjQ2NDE4LDQ1Ljg2NjY3IC00NS44NjY2Nyw0NS44NjY2N2MtMjUuNDAyNDksMCAtNDUuODY2NjcsLTIwLjQ2NDE4IC00NS44NjY2NywtNDUuODY2NjdjMCwtMjUuNDAyNDkgMjAuNDY0MTgsLTQ1Ljg2NjY3IDQ1Ljg2NjY3LC00NS44NjY2N3oiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" class="search-icon" alt="search-icon" />

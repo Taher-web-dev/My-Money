@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
 
-<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false} %>
+<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false, back_view: false} %>
 <div class="all-categories">
 <% if @categories %>
 <% @categories.each do |cat| %>
