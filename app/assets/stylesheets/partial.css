@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url('Proxima Nova Bold.otf');
-  }
-  
-  @font-face {
-    font-family: 'Proxima Nova Light';
-    src: url('Proxima Nova Light.otf');
-  }
-  
+  font-family: 'Proxima Nova Bold';
+  src: url('Proxima Nova Bold.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('Proxima Nova Light.otf');
+}
+
 .header-wrapper {
   width: 100%;
   background-color: #3778c2;
@@ -36,7 +36,7 @@
 
 .view-name {
   color: white;
-  font-family: 'Proxima Nova Bold.otf';
+  font-family: 'Proxima Nova Bold.otf', sans-serif;
 }
 
 .sort-icon {
@@ -45,7 +45,7 @@
 }
 
 .sort-type {
-  font-family: 'Proxima Nova Light';
+  font-family: 'Proxima Nova Light', sans-serif;
   color: white;
   font-size: 16px;
   font-weight: 650;
@@ -60,8 +60,6 @@
 .ancient {
   opacity: 0.6;
 }
-
-
 
 .optional-part {
   display: flex;
@@ -91,14 +89,14 @@
 }
 
 .card-title {
-  font-family: 'Proxima Nova Light' ;
+  font-family: 'Proxima Nova Light', sans-serif;
   font-weight: 600;
   color: #434b54;
   font-size: 18px;
 }
 
 .creation-date {
-  font-family: 'Proxima Nova Light' ;
+  font-family: 'Proxima Nova Light', sans-serif;
   color: #434b54;
   font-weight: 600;
   opacity: 0.6;

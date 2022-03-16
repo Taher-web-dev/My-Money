@@ -22,12 +22,12 @@
 }
 
 .greeting {
-  font-family: 'Proxima Nova Bold';
+  font-family: 'Proxima Nova Bold', sans-serif;
   font-size: 52px;
 }
 
 .app_desc {
-  font-family: 'Proxima Nova Light';
+  font-family: 'Proxima Nova Light', sans-serif;
   width: 60%;
   text-transform: capitalize;
   font-weight: 700;
@@ -47,7 +47,7 @@
   border: 1px solid black;
   border-radius: 40px;
   font-weight: 600;
-  font-family: 'Proxima Nova Bold';
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 
 .up {
@@ -55,5 +55,5 @@
 }
 
 .in {
-  background-color: none;
+  background-color: white;
 }

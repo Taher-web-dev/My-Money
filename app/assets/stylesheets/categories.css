@@ -1,16 +1,17 @@
 @font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url('Proxima Nova Bold.otf');
-  }
-  
-  @font-face {
-    font-family: 'Proxima Nova Light';
-    src: url('Proxima Nova Light.otf');
-  }
+  font-family: 'Proxima Nova Bold';
+  src: url('Proxima Nova Bold.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('Proxima Nova Light.otf');
+}
 
 .all-categories {
   width: 100%;
 }
+
 .btn-wrapper {
   width: 100%;
   height: 12vh;
@@ -19,21 +20,22 @@
   left: 0;
   background-color: #5fb523;
 }
+
 .add-btn {
-    width: 90%;
-    margin-left: 5%;
-    background-color: #5fb523;
-    border: 2px solid white;
-    border-radius: 2.5px;
-    height: 9.6vh;
-    margin-top: 1.2vh;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Proxima Nova Bold';
+  width: 90%;
+  margin-left: 5%;
+  background-color: #5fb523;
+  border: 2px solid white;
+  border-radius: 2.5px;
+  height: 9.6vh;
+  margin-top: 1.2vh;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 
 .no-data {
-  font-family: 'Proxima Nova Light';
+  font-family: 'Proxima Nova Light', sans-serif;
   color: #434b54;
   opacity: 0.7;
   width: 100%;
@@ -45,6 +47,6 @@
   font-size: 22px;
 }
 
-body{
+body {
   background-color: rgb(243, 242, 241);
 }
