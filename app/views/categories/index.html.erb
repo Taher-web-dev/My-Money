@@ -1,6 +1,7 @@
 <%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
-
+<% @categories = Category.all %>
 <%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false, back_view: false} %>
+<%= render "flash/flash" %>
 <div class="all-categories">
 <% if @categories %>
 <% @categories.each do |cat| %>
@@ -14,7 +15,7 @@
     <% exp_id = record.expense_id %>
     <% vl += Expense.find(exp_id).amount %>
   <% end %>
-  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl} %>
+  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl, id: nil} %>
 <% end %> 
 <% else %>
 <p class='no-data'> No category created yet! </p>
