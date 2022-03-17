@@ -3,7 +3,11 @@
 <% path = '/menu' %>
 <% if back_view %>
   <% img_src = image_url('left-arrow.png') %>
-  <% path = '/' %>
+  <% if id %>
+    <% path = "/expenses/#{id}" %>
+  <% else %>
+    <% path = '/' %>
+  <% end %>
 <% end %>
 <div class="header-wrapper">
   <div class="main-header"> 
