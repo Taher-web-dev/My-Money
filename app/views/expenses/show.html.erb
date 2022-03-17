@@ -18,8 +18,8 @@
 <%= render "flash/flash" %>
 <div class="all-categories">
 <% if expenses_id.length > 0 %>
-<% expenses.each do |exp_id| %>
-  <% exp = Expense.find(exp_id) %>
+<% expenses = Expense.where(id: expenses_id).order(created_at: :desc) %>
+<% expenses.each do |exp| %>
   <% img_icon = exp.icon %>
   <% name = exp.name %>
   <% tm = exp.created_at %>
