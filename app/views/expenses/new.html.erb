@@ -10,8 +10,10 @@
     <div class="categories-expenses">
        <p class="categories-qestion"> Select categories in which can belong this transaction: </p>
        <% categories.each do |cat| %>
-         <%= f.check_box :"#{cat.id}" %>
-         <%= f.label :"#{cat.id}", cat.name  %>
+         <div class="option">
+           <%= f.check_box :"#{cat.id}" %>
+           <%= f.label :"#{cat.id}", cat.name  %>
+         </div>
        <% end %>
        
     </div>

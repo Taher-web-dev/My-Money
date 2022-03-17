@@ -126,3 +126,23 @@ body {
   width: 15%;
   opacity: 0.7;
 }
+
+.categories-expenses {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.categories-qestion {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  color:rgb(67, 75, 84);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.option {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
