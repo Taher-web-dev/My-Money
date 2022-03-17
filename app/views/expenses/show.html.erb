@@ -1,5 +1,5 @@
 <%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
-<%= render partial:'partial/header' , locals: {view_name: 'TRANSACTIONS', sort: true, back_view: false} %>
+<%= render partial:'partial/header' , locals: {view_name: 'TRANSACTIONS', sort: true, back_view: true, id:nil} %>
 <% idd = params[:id] %>
 <% records = OperationType.where(category_id: idd) %>
 <% expenses_id = [] %>
