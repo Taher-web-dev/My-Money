@@ -8,6 +8,7 @@
   <% img_icon = cat.icon %>
   <% name = cat.name %>
   <% tm = cat.created_at %>
+  <% idd = cat.id %> 
   <% vl = 0 %>
   <% cat_id = cat.id %>
   <% records = OperationType.where(category_id: cat_id) %>
@@ -15,7 +16,7 @@
     <% exp_id = record.expense_id %>
     <% vl += Expense.find(exp_id).amount %>
   <% end %>
-  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl, id: nil} %>
+  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl, id: idd} %>
 <% end %> 
 <% else %>
 <p class='no-data'> No category created yet! </p>
