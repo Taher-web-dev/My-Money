@@ -1,0 +1,37 @@
+<%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
+<%= render partial:'partial/header' , locals: {view_name: 'TRANSACTIONS', sort: true, back_view: false} %>
+<% idd = params[:id] %>
+<% records = OperationType.where(category_id: idd) %>
+<% expenses_id = [] %>
+<% records.each do |record| %>
+  <% expense_id.push(record.expense_id) %>
+<% end %>
+<% total_amount = 0 %>
+<% expenses_id.each do |exp_id| %>
+  <% exp = Expense.find(exp_id) %>
+  <% total_amount += exp.amount %>
+<% end %>
+<div class="sum-amount">
+  <h2 class="total-title"> Total amount </h2>
+  <p class="total-value"> $<%= total_amount %> </p>
+</div>
+<%= render "flash/flash" %>
+<div class="all-categories">
+<% if expenses_id.length > 0 %>
+<% expenses.each do |exp_id| %>
+  <% exp = Expense.find(exp_id) %>
+  <% img_icon = exp.icon %>
+  <% name = exp.name %>
+  <% tm = exp.created_at %>
+  <% vl = exp.amount %>
+  
+  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl, id: nil} %>
+<% end %> 
+<% else %>
+<p class='no-data'> No transactions belong to this category yet! </p>
+<% end %>
+
+</div>
+<div class='buttn-wrapper'>
+  <%= button_to "Add a new transaction", new_expense_path, method: :get, class:'add-btn' %>
+</div>
