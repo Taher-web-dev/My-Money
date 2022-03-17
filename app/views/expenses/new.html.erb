@@ -3,10 +3,10 @@
 <%= render partial:"partial/header", locals: {view_name: 'NEW TRANSACTION', sort: false, back_view: true, id: params[:id]} %>
 <%= render "flash/flash" %>
 <h2 class="operation-title">Add new transaction </h2>
-<%= form_with model: @expense,url: expenses_path ,method: :post,class:'form-cat' ,local: true, scope: :expense do |f| %>
+<%= form_with model:@expense,url: expenses_path ,method: :post,class:'form-cat' ,local: true, scope: :expense do |f| %>
     <%= f.text_field :name, placeholder:'Transaction Name', class:'input-look', required: :true %>
-    <%= f.number_field :name, placeholder:'Transaction amount', class:'input-look', required: :true %>
-    <%= f.text_field :icon, placeholder:'Icon URL', class:'input-look' %>
+    <%= f.number_field :amount, placeholder:'Transaction amount', class:'input-look', required: :true %>
+    <%= f.text_field :icon, placeholder:'Icon URL', class:'input-look', value:'' %>
     <div class="categories-expenses">
        <p class="categories-qestion"> Select categories in which can belong this transaction: </p>
        <% categories.each do |cat| %>

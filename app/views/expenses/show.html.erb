@@ -4,7 +4,7 @@
 <% records = OperationType.where(category_id: idd) %>
 <% expenses_id = [] %>
 <% records.each do |record| %>
-  <% expense_id.push(record.expense_id) %>
+  <% expenses_id.push(record.expense_id) %>
 <% end %>
 <% total_amount = 0 %>
 <% expenses_id.each do |exp_id| %>

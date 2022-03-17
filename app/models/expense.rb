@@ -6,9 +6,9 @@ class Expense < ApplicationRecord
   validates :amount, presence: true
   validates :amount, numericality: { greater_than: 0 }
 
-  def create(categories_list)
+  def create_category_type(categories_list)
     categories_list.each do |cat|
-      new_operation = OperationType.new(expense: self, category: cat)
+      new_operation = OperationType.new(expense: self, category_id: cat)
       new_operation.save!
     end
   end
