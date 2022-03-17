@@ -1,8 +1,5 @@
 class CategoriesController < ApplicationController
-
-  def index
-
-  end
+  def index; end
 
   def new
     @category = Category.new
@@ -10,17 +7,19 @@ class CategoriesController < ApplicationController
       format.html { render :new, locals: { category: @category } }
     end
   end
-  
+
   def create
     @category = Category.new(**category_params, user: current_user)
     if @category.save
-      redirect_to '/', success:'Category saved successfully'
+      redirect_to '/', success: 'Category saved successfully'
     else
-      redirect_to '/categories/new', alert:'Category could not be created'
+      redirect_to '/categories/new', alert: 'Category could not be created'
     end
   end
-  private 
+
+  private
+
   def category_params
-    params.require(:category).permit(:name,:icon)
+    params.require(:category).permit(:name, :icon)
   end
 end

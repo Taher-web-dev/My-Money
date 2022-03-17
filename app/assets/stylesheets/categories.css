@@ -24,8 +24,7 @@
   background-color: #5fb523;
 }
 
-.add-btn  {
-  
+.add-btn {
   color: white;
   text-transform: uppercase;
   font-family: 'Proxima Nova Bold', sans-serif;
@@ -45,6 +44,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 .no-data {
   font-family: 'Proxima Nova Light', sans-serif;
   color: #434b54;
@@ -107,7 +107,7 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  height: 12vh ;
+  height: 12vh;
   justify-content: space-between;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .categories-qestion {
   font-family: 'Proxima Nova Bold', sans-serif;
-  color:rgb(67, 75, 84);
+  color: rgb(67, 75, 84);
   font-weight: 600;
   font-size: 16px;
 }
