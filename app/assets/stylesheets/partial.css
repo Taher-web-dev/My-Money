@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('Proxima Nova Bold.otf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('Proxima Nova Light.otf');
+}
+
+.header-wrapper {
+  width: 100%;
+  background-color: #3778c2;
+}
+
+.main-header {
+  width: 90%;
+  display: flex;
+  margin-left: 5%;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ham-menu {
+  width: 10%;
+}
+
+.icon-img {
+  width: 100%;
+}
+
+.search-icon {
+  width: 10%;
+}
+
+.view-name {
+  color: white;
+  font-family: 'Proxima Nova Bold.otf', sans-serif;
+}
+
+.sort-icon {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.sort-type {
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 650;
+  margin-bottom: 15px;
+}
+
+.recent {
+  margin-left: 40%;
+  margin-right: 10%;
+}
+
+.ancient {
+  opacity: 0.6;
+}
+
+.optional-part {
+  display: flex;
+  flex-direction: column;
+  font-weight: 650;
+  font-size: 16px;
+}
+
+.card-wrapper {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  padding: 15px 15px;
+  background-color: white;
+  margin-top: 5%;
+  text-decoration: none;
+}
+
+.img-cat-trans {
+  width: 15%;
+  margin-right: 5%;
+  height: 70px;
+}
+
+.general-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 55%;
+}
+
+.card-title {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: 600;
+  color: #434b54;
+  font-size: 18px;
+}
+
+.creation-date {
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: #434b54;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.amount-value {
+  align-self: center;
+  font-weight: 600;
+  color: black;
+  width: 15%;
+  justify-self: flex-end;
+  margin-left: 10%;
+  margin-top: 5px;
+  opacity: 0.7;
+}

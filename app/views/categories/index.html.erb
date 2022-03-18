@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
+<% @categories = Category.where(user_id: current_user.id) %>
+<%= render partial:'partial/header' , locals: {view_name: 'CATEGORIES', sort: false, back_view: false} %>
+<%= render "flash/flash" %>
+<div class="all-categories">
+<% if @categories.length > 0 %>
+<% @categories.each do |cat| %>
+  <% img_icon = cat.icon %>
+  <% name = cat.name %>
+  <% tm = cat.created_at %>
+  <% idd = cat.id %> 
+  <% vl = 0 %>
+  <% cat_id = cat.id %>
+  <% records = OperationType.where(category_id: cat_id) %>
+  <% records.each do |record| %>
+    <% exp_id = record.expense_id %>
+    <% vl += Expense.find(exp_id).amount %>
+  <% end %>
+  <%= render partial:'partial/card', locals: {img: img_icon, title: name, date: tm, amount: vl, id: idd} %>
+<% end %> 
+<% else %>
+<p class='no-data'> No category created yet! </p>
+<% end %>
+
+</div>
+<div class='buttn-wrapper'>
+  <%= button_to "Add a new category", new_category_path, method: :get, class:'add-btn' %>
+</div>

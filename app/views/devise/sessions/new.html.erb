@@ -1,0 +1,43 @@
+
+<div class="wrapper">
+  <div class="header-design">
+    
+    <img src="https://img.icons8.com/color/48/000000/user-menu-male--v1.png" class='img-profile' />
+    <h2> Welcome to My Money app!</h2>
+  </div>
+  <div class="operation">
+    <%= link_to "Log In", new_user_session_path, class:'disabled-link' %>
+    <%= link_to "Sign Up", new_user_registration_path, class:'active-link' %>
+  </div>
+
+<%= render "flash/flash" %>
+
+<h2 class='log-in-title'>Log in</h2>
+
+<%= form_for(resource, as: resource_name,class:'form-data' ,url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <div class="wrapper-data-icon">
+      <img src="data:image/png;base64,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" class='data-icon'/>
+    </div>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",class: 'input-data', placeholder:'example@gmail.com' %>
+  </div>
+
+  <div class="field">
+    <div class="wrapper-data-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawTBDi37gsxIvuvomIfkq2mGfnYfFc-U2lw&usqp=CAU" class='data-icon'/></div>
+    <%= f.password_field :password, autocomplete: "current-password", class: 'input-data', placeholder:'Your Password' %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field-remember">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="sign-up">
+    <%= f.submit "Log in", class:'sign-up-btn' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links", class:'useful-link' %>
+</div>

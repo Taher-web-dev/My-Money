@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag "categories", "data-turbo-track": "reload" %>
+<%= render partial:"partial/header", locals: {view_name: 'NEW CATEGORY', sort: false, back_view: true, id:nil} %>
+<%= render "flash/flash" %>
+<h2 class="operation-title">Add new category </h2>
+<%= form_with model: category,url: categories_path ,method: :post,class:'form-cat' ,local: true, scope: :category do |f| %>
+    <%= f.text_field :name, placeholder:'Category Name', class:'input-look', required: :true %>
+    <%= f.text_field :icon, placeholder:'Icon URL', class:'input-look', required: :true %>
+    <div class="sign-up">
+      <%= f.submit "SAVE", class:'sign-up-btn' %>
+    </div>
+<% end %>

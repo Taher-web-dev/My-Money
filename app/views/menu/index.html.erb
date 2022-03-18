@@ -1,0 +1,33 @@
+<%= stylesheet_link_tag "menu", "data-turbo-track": "reload" %>
+<% home_img = image_url('white-home.png') %>
+<% add_img = image_url('add.png') %>
+<% forward_img = image_url('fast-forward.png') %>
+<% edit_img = image_url('edit.png') %>
+<% logout_img = image_url('logout.png') %>
+<div class="btn-wrapper home">
+  <img src= <%= home_img %> alt="home-icon" class='page-icon'/>
+  <a href='/' class='btn' %>Home</a>
+  <img src= <%= forward_img %> alt="forward-icon" class='forward-icon'/>
+</div>
+<div class="btn-wrapper category">
+  <img src= <%= add_img %> alt="home-icon" class='page-icon'/>
+  <a href='/categories/new' class='btn' %>Add new category</a>
+  <img src= <%= forward_img %> alt="forward-icon" class='forward-icon'/>
+</div>
+<div class="btn-wrapper transaction">
+  <img src= <%= add_img %> alt="home-icon" class='page-icon'/>
+  <a href='/expenses/new' class='btn' %>Add new transaction</a>
+  <img src= <%= forward_img %> alt="forward-icon" class='forward-icon'/>
+</div>
+
+<div class="btn-wrapper edit">
+  <img src= <%= edit_img %> alt="home-icon" class='page-icon'/>
+  <a href='/users/edit' class='btn' %>Edit account</a>
+  <img src= <%= forward_img %> alt="forward-icon" class='forward-icon'/>
+</div>
+
+<div class="btn-wrapper  logout">
+  <img src= <%= logout_img  %> alt="home-icon" class='page-icon'/>
+  <%= button_to "Log out", destroy_user_session_path, class:'btn', method: :delete %>
+  <img src= <%= forward_img %> alt="forward-icon" class='forward-icon'/>
+</div>

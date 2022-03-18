@@ -1,24 +1,76 @@
-# README
+# My-Money
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>  My-Money is amobile web application where everyone can manage his budget: there are  a list of transactions associated with a category, so that user can see how much money he spent and on what.
+This application allow user :
 
-Things you may want to cover:
+   - register and log in, so that the data is private to them.
+   - introduce new transactions associated with a category.
+   - see the money spent on each category.
 
-* Ruby version
+<p align="center">
+  <img src="./app/assets/images/my_money.gif">
+</p>
 
-* System dependencies
 
-* Configuration
+## Built With
+- Ruby
+- git
+- Rails
+- postgresql
 
-* Database creation
+## Live Demo
 
-* Database initialization
+[Live Demo Link](https://optimize-my-budget.herokuapp.com/)
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by the command: 
 
-* Deployment instructions
+```
+$ git clone git@github.com:Taher-web-dev/My-Money.git
+```
 
-* ...
+- Then go to the main folder using the next command:
+
+```
+$ cd My-Money.
+```
+- Install Ruby gems using this command line:
+
+```
+$ bundle install in your console.
+```
+- run migration by: 
+```
+rails db:migrate
+```
+- Finaly , run <b> rails s </b> to run the application.
+
+## Authors
+
+👤 **Taher Haggui**
+
+- GitHub: [@Taher-web-dev](https://github.com/Taher-web-dev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/taher-haggui/)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- A big thanks to my coding partners for the help and for Microverse team.
+- Original design idea by : Gregoire Vella (https://www.behance.net/gregoirevella)
+
+## 📝 License
+This project is [Gregoire Vella](https://www.behance.net/gregoirevella) licensed.
