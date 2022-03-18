@@ -37,8 +37,15 @@ $ git clone git@github.com:Taher-web-dev/My-Money.git
 ```
 $ cd My-Money.
 ```
-- run <b>bundle install</b> in your console.
-- run migration by <b> rails db:migrate</b>.
+- Install Ruby gems using this command line:
+
+```
+$ bundle install in your console.
+```
+- run migration by: 
+```
+rails db:migrate
+```
 - Finaly , run <b> rails s </b> to run the application.
 
 ## Authors
