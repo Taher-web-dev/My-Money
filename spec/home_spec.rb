@@ -5,10 +5,8 @@ RSpec.describe 'Home page', type: :system do
       new_user = User.new(name: 'test', email: 'test@gmail.com', password: '123456', password_confirmation: '123456')
       new_user.save!
     end
-    
   end
   describe 'home page' do
-    
     it 'have right content' do
       visit new_user_session_path
       within('#new_user') do
@@ -30,9 +28,10 @@ RSpec.describe 'Home page', type: :system do
       expect(page).to have_current_path(new_category_path)
     end
     it 'display category with required information' do
-      unless Category.all.length >=1
+      unless Category.all.length >= 1
         new_user = User.find_by(email: 'test@gmail.com')
-        new_category = Category.new(name: 'Food', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmk7E-ji43uI4gdQcYpGO1LLeFFcZ8m9NOTw&usqp=CAU',user: new_user)
+        new_category = Category.new(name: 'Food',
+                                    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmk7E-ji43uI4gdQcYpGO1LLeFFcZ8m9NOTw&usqp=CAU', user: new_user)
         new_category.save!
       end
       visit new_user_session_path
@@ -46,9 +45,10 @@ RSpec.describe 'Home page', type: :system do
       expect(page).to have_css("img[src*='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmk7E-ji43uI4gdQcYpGO1LLeFFcZ8m9NOTw&usqp=CAU']")
     end
     it 'navigate to the transaction page when the user tape on a category item' do
-      unless Category.all.length >=1
+      unless Category.all.length >= 1
         new_user = User.find_by(email: 'test@gmail.com')
-        new_category = Category.new(name: 'Food', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmk7E-ji43uI4gdQcYpGO1LLeFFcZ8m9NOTw&usqp=CAU',user: new_user)
+        new_category = Category.new(name: 'Food',
+                                    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmk7E-ji43uI4gdQcYpGO1LLeFFcZ8m9NOTw&usqp=CAU', user: new_user)
         new_category.save!
       end
       visit new_user_session_path

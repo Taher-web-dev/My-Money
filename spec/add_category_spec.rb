@@ -5,7 +5,6 @@ RSpec.describe 'Add Category page', type: :system do
       new_user = User.new(name: 'test', email: 'test@gmail.com', password: '123456', password_confirmation: '123456')
       new_user.save!
     end
-    
   end
   describe 'Add Category page' do
     it 'have right content' do

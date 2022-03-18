@@ -33,6 +33,5 @@ RSpec.describe 'Login', type: :system do
       click_button 'Log in'
       expect(page).to have_current_path(root_path)
     end
-  
-end
+  end
 end
