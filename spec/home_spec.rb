@@ -18,7 +18,6 @@ RSpec.describe 'Home page', type: :system do
       click_button 'Log in'
       expect(page).to have_content('CATEGORIES')
       expect(page).to have_content('ADD A NEW CATEGORY')
-      expect(page).to have_content('No category created yet!')  
     end
     it 'have button which can allow bring user to the page to craete new category' do
       visit new_user_session_path
