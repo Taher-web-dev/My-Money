@@ -37,8 +37,9 @@ $ git clone git@github.com:Taher-web-dev/My-Money.git
 ```
 $ cd My-Money.
 ```
-- Finally run <b>bundle install</b> in your console.
-
+- run <b>bundle install</b> in your console.
+- run migration by <b> rails db:migrate</b>.
+- Finaly , run <b> rails s </b> to run the application.
 
 ## Authors
 
