@@ -1,6 +1,6 @@
 # My-Money
 
->  My-Money is amobile web application where everyone can manage his budget: there are  a list of transactions associated with a category, so that user can see how much money he spent and on what.
+>  My-Money is a mobile web application where everyone can manage his budget: there are  a list of transactions associated with a category, so that user can see how much money he spent and on what.
 This application allow user :
 
    - register and log in, so that the data is private to them.
